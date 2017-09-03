@@ -5,6 +5,7 @@ import store from './store'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import * as filters from './filters' // 全局vue filter
+import Icon from 'vue-awesome'
 
 Vue.config.productionTip = false
 
@@ -14,6 +15,8 @@ Vue.use(ElementUI)
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
+
+Vue.component('icon', Icon)
 
 new Vue({
   el: '#app',

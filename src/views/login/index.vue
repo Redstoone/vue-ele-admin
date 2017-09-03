@@ -4,19 +4,19 @@
       <h3 class="title">后台管理系统登录</h3>
 
       <el-form-item prop="username">
-        <span class="svg-container svg-container_login">
-          <icon-svg icon-class="yonghuming" />
+        <span>
+          <icon name="camera"></icon>
         </span>
         <el-input name="username" type="text" v-model="loginForm.username" autoComplete="on" placeholder="邮箱" />
       </el-form-item>
 
       <el-form-item prop="password">
-        <span class="svg-container">
-          <icon-svg icon-class="mima" />
+        <span>
+          <icon name="camera"></icon>
         </span>
         <el-input name="password" :type="pwdType" @keyup.enter.native="handleLogin" v-model="loginForm.password" autoComplete="on" placeholder="密码" />
         <span class='show-pwd' @click='showPwd'>
-          <icon-svg icon-class="yanjing" />
+          <!-- <icon-svg icon-class="yanjing" /> -->
         </span>
       </el-form-item>
 
@@ -85,7 +85,7 @@ $light_gray:#eee;
   height: 100vh;
   background-color: $bg;
   input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px #293444 inset !important;
+    box-shadow: 0 0 0px 1000px #293444 inset !important;
     -webkit-text-fill-color: #fff !important;
   }
   input {
